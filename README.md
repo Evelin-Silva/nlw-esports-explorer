@@ -9,11 +9,11 @@
 
 <br>
 
-![Preview do projeto](./preview/nlw-esports-explorer.png)
+![Preview do projeto](/preview/nlw-esports-explorer.png)
 
 <br>
 
-[🔗 Link para o projeto]()
+[🔗 Link para o projeto](https://index-evelin.github.io/nlw-esports-explorer/)
 
 <br>
 
