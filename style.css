@@ -1,0 +1,147 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    margin-top: 32px;
+    margin-bottom: 44px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-image: url(assets/Fundo.jpg);
+    background-position: top center;
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    background-color: #121214;
+}
+
+body *{
+    line-height: 160%;
+}
+
+header{
+    height: calc(120px + 32px);
+}
+
+header div{
+    width: 120px;
+    margin: auto;
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    border-radius: 50%;
+    display: flex;
+    padding: 4px;
+    animation: fromTop .3s .4s backwards;
+}
+
+header img{
+    width: 100%;
+    border-radius: 50%;
+}
+
+main{
+    max-width: 580px;
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+main section{
+    animation: fromBottom .7s backwards;
+}
+
+main section:nth-child(1){
+    animation-delay: 0;
+}
+
+main section:nth-child(2){
+    animation-delay: .4s;
+}
+
+main section:nth-child(3){
+    animation-delay: .8s;
+}
+
+section{
+    background-image: linear-gradient(90deg, #9572FC 0%, #43E7AD 50.52%, #E2D45C 100%);
+    padding-top: 4px;
+    border-radius: 10px;
+}
+
+section div{
+    background: #2A2634;
+    padding: 24px 32px 32px 32px;
+    border-radius: 8px;
+}
+
+section img{
+    transition: transform .3s;
+}
+
+h2{
+    color: white;
+    letter-spacing: -0.47px;
+}
+
+p{
+    color: #A1A1AA;
+    letter-spacing: -0.18px;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 24px;
+}
+
+.games-list img{
+    width: 90px;
+    border-radius: 8px;
+}
+
+.channel-list img{
+    border-radius: 50%;
+    border: 1px solid #443E54;
+}
+
+.social-list img{
+    height: 24px;
+    width: 24px;
+}
+
+section img:hover{
+    transform: scale(1.1);
+}
+
+@keyframes fromTop {
+    from {
+        opacity: 0;
+        transform: translateY(-30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fromBottom {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
