@@ -9,7 +9,7 @@
 
 <br>
 
-![Preview do projeto]()
+![Preview do projeto](./preview/nlw-esports-explorer.png)
 
 <br>
 
